@@ -1,7 +1,7 @@
 <?php
 
 error_reporting(-1);
-include_once '../lib/swift_required.php';
+include_once '../vendor/autoload.php';
 define("to", 'yanivagent@gmail.com');
 define("from", 'no-reply@afriat.info');
 $erreur = "";

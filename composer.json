@@ -1,0 +1,14 @@
+{
+    "name": "warezzzz/dti",
+    "description": "Website for textile company",
+    "type": "project",
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0"
+    },
+    "authors": [
+        {
+            "name": "Afriat Yaniv",
+            "email": "yaniv.afriat@gmail.com"
+        }
+    ]
+}
