@@ -1,0 +1,31 @@
+h1{font-family: 'Chicle', cursive;}
+h2{font-family: 'Pinyon Script', cursive;}
+body{background-image: url('../img/background3.jpg') ; /* Old browsers */
+}
+.label-dti {background-color: #FF4500}
+.container{background-color: white}
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  margin-bottom: 0px;
+  padding-bottom: 24px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
