@@ -2,15 +2,16 @@
 
 error_reporting(-1);
 require_once __DIR__ . '/../vendor/autoload.php';
+
 define("to", 'yanivagent@gmail.com');
 define("from", 'no-reply@afriat.info');
 $erreur = "";
 if ($_POST) {
     $valid = validate($_POST);
-    $transport = \Swift_MailTransport::newInstance();
-    $mailer = \Swift_Mailer::newInstance($transport);
+    $transport = new Swift_MailTransport();
+    $mailer = Swift_Mailer::newInstance($transport);
 
-    $message = \Swift_Message::newInstance()
+    $message = Swift_Message::newInstance()
             ->setSubject("Message envoyé depuis le site : Diffusion Textile International")
             ->setFrom(array(from => 'Diffusion Textile International'))
             ->setTo(array(to))
