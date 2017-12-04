@@ -14,8 +14,8 @@ if ($_POST) {
     ;
     $mailer = new Swift_Mailer($transport);
 
-    $message = new Swift_Message()
-            ->setSubject("Message envoyé depuis le site : Diffusion Textile International")
+    $message = new Swift_Message();
+    $message->setSubject("Message envoyé depuis le site : Diffusion Textile International")
             ->setFrom(array(from => 'Diffusion Textile International'))
             ->setTo(array(to))
             ->setBody(formatParamsHTML($_POST), 'text/html')
