@@ -8,7 +8,10 @@ define("from", 'no-reply@afriat.info');
 $erreur = "";
 if ($_POST) {
     $valid = validate($_POST);
-    $transport = new Swift_MailTransport();
+    $transport = (new Swift_SmtpTransport('auth.smtp.1and1.fr', 465, 'ssl'))
+        ->setUsername(getenv('SMTP_LOGIN'))
+        ->setPassword(getenv('SMTP_PASSWORD'))
+    ;
     $mailer = Swift_Mailer::newInstance($transport);
 
     $message = Swift_Message::newInstance()
