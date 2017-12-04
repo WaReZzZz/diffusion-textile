@@ -12,9 +12,9 @@ if ($_POST) {
         ->setUsername(getenv('SMTP_LOGIN'))
         ->setPassword(getenv('SMTP_PASSWORD'))
     ;
-    $mailer = Swift_Mailer::newInstance($transport);
+    $mailer = new Swift_Mailer($transport);
 
-    $message = Swift_Message::newInstance()
+    $message = new Swift_Message()
             ->setSubject("Message envoyé depuis le site : Diffusion Textile International")
             ->setFrom(array(from => 'Diffusion Textile International'))
             ->setTo(array(to))
