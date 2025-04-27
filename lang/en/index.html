@@ -1,184 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Diffusion Textile Internationale</title>
-        <meta name="description" content="Company selling textile wholesale and retail in Morocco. A wide variety of products, both in furniture in clothing.">
-        <meta name="keywords" content="Textile, Fabric, Fabric, Cotton, Polyester, faux leather, faux suede, Import, Casablanca, Morocco">
-        <meta name="author" content="Afriat Yaniv">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Chicle|Pinyon+Script' rel='stylesheet' type='text/css'>
-        <link href="../../css/justified-nav.css" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <div class="container">
-            <div class="pull-right">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary" onclick="location.href='/'">Français</button>
-                    <button type="button" class="btn btn-primary active">English</button>
-                    <button type="button" class="btn btn-primary" onclick="location.href='/lang/cn/index.html'">中国的</button>
-                    <button type="button" class="btn btn-primary" onclick="location.href='/lang/ar/index.html'">
-                        العربية
-                    </button>
+<head>
+    <title>Diffusion Textile Internationale | Textile Wholesaler in Morocco</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Main SEO meta tags -->
+    <meta content="Leading textile distributor in Morocco. Clothing, furnishing and technical fabrics for wholesale and retail. Cotton, polyester, linen, faux leather and more in Casablanca."
+          name="description">
+    <meta content="textile Morocco, fabrics Casablanca, textile wholesaler, furnishing fabrics, clothing fabrics, cotton, polyester, faux leather, textile import, wholesale fabric"
+          name="keywords">
+    <meta content="Diffusion Textile Internationale" name="author">
+
+    <!-- Open Graph / Facebook -->
+    <meta content="website" property="og:type">
+    <meta content="https://dti.afriat.info/en/" property="og:url">
+    <meta content="Diffusion Textile Internationale | Textile Wholesaler in Morocco" property="og:title">
+    <meta content="Leading textile distributor in Morocco. Wide range of fabrics for clothing and furnishing."
+          property="og:description">
+    <meta content="https://dti.afriat.info/images/og-image.jpg" property="og:image">
+
+    <!-- Twitter -->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://dti.afriat.info/" name="twitter:url">
+    <meta content="Diffusion Textile Internationale | Grossiste Textile au Maroc" name="twitter:title">
+    <meta content="Leader dans la distribution textile au Maroc. Large gamme de tissus pour l'habillement et l'ameublement."
+          name="twitter:description">
+    <meta content="https://dti.afriat.info/images/twitter-image.jpg" name="twitter:image">
+
+    <!-- Localisation -->
+    <meta content="MA-CAS" name="geo.region">
+    <meta content="Casablanca" name="geo.placename">
+    <meta content="33.5953;-7.6192" name="geo.position">
+    <meta content="33.5953, -7.6192" name="ICBM">
+
+    <!-- Autres meta tags importants -->
+    <meta content="index, follow" name="robots">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="telephone=no" name="format-detection">
+    <link href="https://dti.afriat.info/" rel="canonical">
+
+    <!-- Langues alternatives -->
+    <link href="https://dti.afriat.info/" hreflang="fr" rel="alternate">
+    <link href="https://dti.afriat.info/lang/en/" hreflang="en" rel="alternate">
+    <link href="https://dti.afriat.info/lang/cn/" hreflang="zh" rel="alternate">
+    <link href="https://dti.afriat.info/lang/ar/" hreflang="ar" rel="alternate">
+
+    <!-- Favicons -->
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/site.webmanifest" rel="manifest">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Ressources CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Diffusion Textile Internationale",
+            "image": "https://dti.afriat.info/images/logo.jpg",
+            "description": "Leader dans la distribution textile au Maroc. Tissus d'habillement, d'ameublement et techniques en gros et détail.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "76-78, rue Mohamed Smiha",
+                "addressLocality": "Casablanca",
+                "postalCode": "20090",
+                "addressCountry": "MA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 33.5953,
+                "longitude": -7.6192
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            "telephone": "+212522446190",
+            "url": "https://dti.afriat.info"
+        }
+    </script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-form {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background: var(--secondary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .product-tag {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .product-tags {
+            margin-top: 1.5rem;
+        }
+
+        .product-tag {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            margin: 5px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .product-tag:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+            cursor: pointer;
+        }
+
+        .product-card h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Animation pour les tags */
+        @keyframes tagAppear {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .product-tag {
+            animation: tagAppear 0.3s ease forwards;
+        }
+
+        /* Délai d'animation pour chaque tag */
+        .product-tag:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .product-tag:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .product-tag:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .product-tag:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .product-tag:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">DTI</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="/">Français</a>
+            <a class="nav-link active" href="#">English</a>
+            <a class="nav-link" href="/lang/cn/">中文</a>
+            <a class="nav-link" href="/lang/ar/">العربية</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1>Diffusion Textile Internationale</h1>
+        <p class="lead">Leading Textile Distributor in Morocco</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="product-card text-center">
+                <i class="fas fa-handshake fa-3x mb-3"></i>
+                <h3>Our Services</h3>
+                <p>Expert guidance to help you find the best products that match your needs</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card text-center">
+                <i class="fas fa-box fa-3x mb-3"></i>
+                <h3>Our Products</h3>
+                <p>Wide range of high-quality textiles for furnishing and clothing</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card text-center">
+                <i class="fas fa-phone fa-3x mb-3"></i>
+                <h3>Contact</h3>
+                <p>Our team is ready to assist you with all your inquiries</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Our Textile Products</h2>
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="product-card">
+                <h3>Clothing Fabrics</h3>
+                <div class="product-tags">
+                    <span class="product-tag">Cotton</span>
+                    <span class="product-tag">Polyester</span>
+                    <span class="product-tag">Linen</span>
+                    <span class="product-tag">Mlifa</span>
+                    <span class="product-tag">Rayon</span>
+                    <span class="product-tag">Shirt fabrics</span>
+                    <span class="product-tag">Poplin lycra</span>
+                    <span class="product-tag">Poplin 80/20</span>
                 </div>
             </div>
-            <!-- Jumbotron -->
-            <div class="jumbotron">
-                <h1 class="text-muted">Diffusion Textile Internationale</h1>
-                <p class="lead">Company selling textile wholesale and retail in Morocco. A wide variety of products, both in furniture in clothing.</p>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="product-card">
+                <h3>Furnishing Fabrics</h3>
+                <div class="product-tags">
+                    <span class="product-tag">Suede</span>
+                    <span class="product-tag">Dacron</span>
+                    <span class="product-tag">PU faux leather</span>
+                    <span class="product-tag">Sofa</span>
+                    <span class="product-tag">Drapery</span>
+                    <span class="product-tag">Satin lining</span>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="product-card">
+                <h3>Technical Fabrics</h3>
+                <div class="product-tags">
+                    <span class="product-tag">Polyester Viscose</span>
+                    <span class="product-tag">Work fabric 80/20 185 gsm</span>
+                    <span class="product-tag">Organza</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="product-card">
+                <h3>Special Features</h3>
+                <div class="product-tags">
+                    <span class="product-tag">All colors available</span>
+                    <span class="product-tag">Direct import</span>
+                    <span class="product-tag">Wholesale & Retail</span>
+                    <span class="product-tag">Premium quality</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Contact Form -->
+<section class="container my-5">
+    <div class="contact-form">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="alert alert-info" style="display: none">
+            <button class="close" data-dismiss="alert" type="button">&times;</button>
+            <strong>Message sent!</strong> We will get back to you shortly.
+        </div>
+        <form action="/class/contact.php" id="contactForm" method="POST">
             <div class="row">
-                <div class="alert alert-info" style="display: none">
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
-                    <strong>Message sent!</strong> We will come back to you quickly.
-                </div>
-                <form name="contactForm" id="contactForm" class="form-horizontal well" action="../../class/contact.php" method="POST">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label class="control-label col-sm-4" for="nom">Full name</label>
-                            <div class=" col-sm-8">
-                                <input name="nom" class="col-sm-10" id="nom" type="text" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-4" for="compagny">Company</label>
-                            <div class=" col-sm-8">
-                                <input name="compagny" class="col-sm-10" id="compagny" type="text" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-4" for="email">Email adress</label>
-                            <div class=" col-sm-8">
-                                <div class="input-append">
-                                    <input name="email" class="col-sm-10" id="email" type="email" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-4" for="tel">Phone</label>
-                            <div class=" col-sm-8">
-                                <input name="tel" class="col-sm-10" id="tel" type="text" required>
-                            </div>
-                        </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <input class="form-control" id="nom" name="nom" placeholder="Full Name" required type="text">
                     </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="message">Message</label>
-                            <div class=" col-sm-10">
-                                <div class="input-append">
-                                    <textarea rows="7" class="col-sm-12" id="message" name="message"></textarea>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mb-3">
+                        <input class="form-control" id="email" name="email" placeholder="Email" required type="email">
                     </div>
-                    <div class="pull-right"><input name="contactForm" class="btn btn-lg btn-primary" type="submit" value="Send"></div>
-                    <div class="clearfix"></div>
-                </form>
-            </div>
-
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2>Services</h2>
-                    <p>We put our experience and relationship with your service to find or offer you items that best fit your needs</p>
+                    <div class="mb-3">
+                        <input class="form-control" id="tel" name="tel" placeholder="Phone" type="tel">
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" id="compagny" name="compagny" placeholder="Company" type="text">
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h2>Our Products</h2>
-                    <!--<p class="text-danger">Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>-->
-                    <p>We import all types of textile products according to demand:  </p>
-                    <span class="label label-dti">Cotton</span>
-                    <span class="label label-dti">Polyester</span>
-                    <span class="label label-dti">Linen</span>
-                    <span class="label label-dti">Mlifa</span>
-                    <span class="label label-dti">Rayon</span>
-                    <span class="label label-dti">Suede</span>
-                    <span class="label label-dti">Dacron</span>
-                    <span class="label label-dti">PU fake leather</span>
-                    <span class="label label-dti">Sofa</span>
-                    <span class="label label-dti">Organza</span>
-                    <span class="label label-dti">Shirt fabrics</span>
-                    <span class="label label-dti">Draperie</span>
-                    <span class="label label-dti">Drapery</span>
-                    <span class="label label-dti">Poplin lycra</span>
-                    <span class="label label-dti">Poplin 80/20</span>
-                    <span class="label label-dti">Polyester Viscose</span>
-                    <span class="label label-dti">Tissues of work 80/20 185 gsm all colors</span>
-                </div>
-                <div class="col-lg-4">
-                    <h2>Contact Informations</h2>
-                    <address>76-78, rue Mohamed Smiha<br>
-                        Quartier: Derb Omar<br>
-                        20090 CASABLANCA </address>
-                    <abbr title="Phone">Phone:</abbr> (+212) 05 22 44 61 90 / 05 22 44 65 24<br>
-                    <abbr title="Fax">Fax:</abbr> (+212) 05 22 44 54 86
-                    <address>
-                        <strong>Email :</strong>
-                        <a href="mailto:info@dti.ma">info@dti.ma</a>
-                    </address>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" name="message" placeholder="Your message" required
+                                  rows="6"></textarea>
+                    </div>
                 </div>
             </div>
-
-            <!-- Site footer -->
-            <div class="footer">
-                <p class="pull-right">&copy; Diffusion Textile Internationale (D.t.i s.a.r.l) 2014</p>
+            <div class="text-center">
+                <button class="btn btn-primary" type="submit">Send</button>
             </div>
+        </form>
+    </div>
+</section>
 
-        </div> <!-- /container -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="../../js/bootstrap.min.js"></script>
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Address</h4>
+                <p>76-78, rue Mohamed Smiha<br>
+                    District: Derb Omar<br>
+                    20090 CASABLANCA</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Contact</h4>
+                <p>Tel: (+212) 05 22 44 61 90<br>
+                    Fax: (+212) 05 22 44 54 86<br>
+                    Email: dti@afriat.info</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Business Hours</h4>
+                <p>Monday - Friday: 9am - 6pm<br>
+                    Saturday: 9am - 1pm</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
-            ga('create', 'UA-46510662-1', 'dti.ma');
-            ga('send', 'pageview');
-            $(document).ready(function() {
-                // lorsque je soumets le formulaire
-                $('#contactForm').on('submit', function() {
- 
-                    // je récupère les valeurs
-                    var email = $('#email').val();
-                    var message = $('#message').val();
- 
-                    // je vérifie une première fois pour ne pas lancer la requête HTTP
-                    // si je sais que mon PHP renverra une erreur
-                    if(email == '' || message == '') {
-                        alert('Fields are filled beings');
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/d8e635d1ce.js"></script>
+
+<!-- Ajoutez ce script JavaScript à la fin de votre page, juste avant </body> -->
+
+<script>
+    $(document).ready(function () {
+        $('#contactForm').on('submit', function (e) {
+            e.preventDefault(); // Empêche la soumission normale du formulaire
+
+            var form = $(this);
+            var email = $('#email').val();
+            var message = $('#message').val();
+
+            if (email == '' || message == '') {
+                alert('Les champs doivent êtres remplis');
+                return false;
+            }
+
+            $.ajax({
+                url: form.attr('action'),
+                type: form.attr('method'),
+                data: form.serialize(),
+                dataType: 'json',
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
+                beforeSend: function () {
+                    // Désactiver le bouton d'envoi pendant la requête
+                    form.find('button[type="submit"]').prop('disabled', true);
+                },
+                success: function (response) {
+                    if (response.success) {
+                        $('.alert-info').fadeIn();
+                        form[0].reset();
+                        // Scroll vers le message de succès
+                        $('html, body').animate({
+                            scrollTop: $('.alert-info').offset().top - 100
+                        }, 500);
+                        // Cacher le message après 5 secondes
+                        setTimeout(function () {
+                            $('.alert-info').fadeOut();
+                        }, 5000);
                     } else {
-                        // appel Ajax
-                        $.ajax({
-                            url: $(this).attr('action'), // le nom du fichier indiqué dans le formulaire
-                            type: $(this).attr('method'), // la méthode indiquée dans le formulaire (get ou post)
-                            data: $(this).serialize(), // je sérialise les données (voir plus loin), ici les $_POST
-                            success: function() { // je récupère la réponse du fichier PHP
-                                $(".alert-info").show(); // j'affiche cette réponse
-                            }
-                        });
+                        alert('Erreur : ' + (response.message || 'Une erreur est survenue'));
                     }
-                    return false; // j'empêche le navigateur de soumettre lui-même le formulaire
-                });
+                },
+                error: function (xhr, status, error) {
+                    alert('Une erreur est survenue. Veuillez réessayer plus tard.');
+                    console.error('Erreur AJAX:', status, error);
+                },
+                complete: function () {
+                    // Réactiver le bouton d'envoi
+                    form.find('button[type="submit"]').prop('disabled', false);
+                }
             });
 
-        </script>
-    </body>
+            return false; // Empêche la soumission du formulaire
+        });
+
+        // Gestion du bouton de fermeture de l'alerte
+        $('.alert .close').on('click', function () {
+            $(this).parent('.alert').fadeOut();
+        });
+    });
+</script>
+</body>
 </html>

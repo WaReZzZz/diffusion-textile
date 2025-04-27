@@ -1,184 +1,482 @@
 <!DOCTYPE html>
 <html lang="zh">
-    <head>
-        <title>Diffusion Textile Internationale</title>
-        <meta name="description" content="公司销售纺织品批发和零售在摩洛哥。各种各样的产品，无论是在家具中衣物。">
-        <meta name="keywords" content="纺织，面料，面料，棉，涤纶，人造皮革，人造麂皮，进口，卡萨布兰卡，摩洛哥">
-        <meta name="author" content="Afriat Yaniv">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Chicle|Pinyon+Script' rel='stylesheet' type='text/css'>
-        <link href="../../css/justified-nav.css" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <div class="container">
-            <div class="pull-right">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary" onclick="location.href='/'">Français</button>
-                    <button type="button" class="btn btn-primary" onclick="location.href='/lang/en/index.html'">English</button>
-                    <button type="button" class="btn btn-primary active">中国的</button>
-                    <button type="button" class="btn btn-primary" onclick="location.href='/lang/ar/index.html'">
-                        العربية
-                    </button>
+<head>
+    <title>国际纺织品分销 | 摩洛哥纺织品批发商</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Meta tags SEO -->
+    <meta content="摩洛哥领先的纺织品分销商。服装面料、家具面料和技术面料批发零售。卡萨布兰卡提供棉、涤纶、亚麻、人造革等产品。"
+          name="description">
+    <meta content="摩洛哥纺织品,卡萨布兰卡面料,纺织品批发商,家具面料,服装面料,棉,涤纶,人造革,纺织品进口"
+          name="keywords">
+    <meta content="国际纺织品分销公司" name="author">
+
+    <!-- Open Graph / Facebook -->
+    <meta content="website" property="og:type">
+    <meta content="https://dti.afriat.info/" property="og:url">
+    <meta content="Diffusion Textile Internationale | Grossiste Textile au Maroc" property="og:title">
+    <meta content="Leader dans la distribution textile au Maroc. Large gamme de tissus pour l'habillement et l'ameublement."
+          property="og:description">
+    <meta content="https://dti.afriat.info/images/og-image.jpg" property="og:image">
+
+    <!-- Twitter -->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://dti.afriat.info/" name="twitter:url">
+    <meta content="Diffusion Textile Internationale | Grossiste Textile au Maroc" name="twitter:title">
+    <meta content="Leader dans la distribution textile au Maroc. Large gamme de tissus pour l'habillement et l'ameublement."
+          name="twitter:description">
+    <meta content="https://dti.afriat.info/images/twitter-image.jpg" name="twitter:image">
+
+    <!-- Localisation -->
+    <meta content="MA-CAS" name="geo.region">
+    <meta content="Casablanca" name="geo.placename">
+    <meta content="33.5953;-7.6192" name="geo.position">
+    <meta content="33.5953, -7.6192" name="ICBM">
+
+    <!-- Autres meta tags importants -->
+    <meta content="index, follow" name="robots">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="telephone=no" name="format-detection">
+    <link href="https://dti.afriat.info/" rel="canonical">
+
+    <!-- Langues alternatives -->
+    <link href="https://dti.afriat.info/" hreflang="fr" rel="alternate">
+    <link href="https://dti.afriat.info/lang/en/" hreflang="en" rel="alternate">
+    <link href="https://dti.afriat.info/lang/cn/" hreflang="zh" rel="alternate">
+    <link href="https://dti.afriat.info/lang/ar/" hreflang="ar" rel="alternate">
+
+    <!-- Favicons -->
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/site.webmanifest" rel="manifest">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Ressources CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Diffusion Textile Internationale",
+            "image": "https://dti.afriat.info/images/logo.jpg",
+            "description": "Leader dans la distribution textile au Maroc. Tissus d'habillement, d'ameublement et techniques en gros et détail.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "76-78, rue Mohamed Smiha",
+                "addressLocality": "Casablanca",
+                "postalCode": "20090",
+                "addressCountry": "MA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 33.5953,
+                "longitude": -7.6192
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            "telephone": "+212522446190",
+            "url": "https://dti.afriat.info"
+        }
+    </script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-form {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background: var(--secondary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .product-tag {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .product-tags {
+            margin-top: 1.5rem;
+        }
+
+        .product-tag {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            margin: 5px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .product-tag:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+            cursor: pointer;
+        }
+
+        .product-card h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Animation pour les tags */
+        @keyframes tagAppear {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .product-tag {
+            animation: tagAppear 0.3s ease forwards;
+        }
+
+        /* Délai d'animation pour chaque tag */
+        .product-tag:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .product-tag:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .product-tag:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .product-tag:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .product-tag:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">DTI</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="/">Français</a>
+            <a class="nav-link" href="/lang/en/">English</a>
+            <a class="nav-link active" href="#">中文</a>
+            <a class="nav-link" href="/lang/ar/">العربية</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1>国际纺织品分销</h1>
+        <p class="lead">摩洛哥领先的纺织品分销商</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="product-card text-center">
+                <i class="fas fa-handshake fa-3x mb-3"></i>
+                <h3>我们的服务</h3>
+                <p>专业经验为您找到最适合您需求的产品</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card text-center">
+                <i class="fas fa-box fa-3x mb-3"></i>
+                <h3>我们的产品</h3>
+                <p>提供各种高质量的家具和服装面料</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card text-center">
+                <i class="fas fa-phone fa-3x mb-3"></i>
+                <h3>联系我们</h3>
+                <p>我们的团队随时为您解答所有问题</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">我们的纺织产品</h2>
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="product-card">
+                <h3>服装面料</h3>
+                <div class="product-tags">
+                    <span class="product-tag">棉</span>
+                    <span class="product-tag">涤纶</span>
+                    <span class="product-tag">亚麻</span>
+                    <span class="product-tag">米利法</span>
+                    <span class="product-tag">人造丝</span>
+                    <span class="product-tag">衬衫面料</span>
+                    <span class="product-tag">莱卡府绸</span>
+                    <span class="product-tag">80/20府绸</span>
                 </div>
             </div>
-            <!-- Jumbotron -->
-            <div class="jumbotron">
-                <h1 class="text-muted">Diffusion Textile Internationale</h1>
-                <p class="lead">公司销售纺织品批发和零售在摩洛哥。各种各样的产品，无论是在家具中衣物。</p>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="product-card">
+                <h3>家具面料</h3>
+                <div class="product-tags">
+                    <span class="product-tag">仿麂皮</span>
+                    <span class="product-tag">涤纶</span>
+                    <span class="product-tag">PU人造革</span>
+                    <span class="product-tag">沙发面料</span>
+                    <span class="product-tag">窗帘布</span>
+                    <span class="product-tag">缎面衬里</span>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="product-card">
+                <h3>技术面料</h3>
+                <div class="product-tags">
+                    <span class="product-tag">涤纶粘胶</span>
+                    <span class="product-tag">80/20工作布 185克</span>
+                    <span class="product-tag">雪纺绸</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+            <div class="product-card">
+                <h3>特殊功能</h3>
+                <div class="product-tags">
+                    <span class="product-tag">多种颜色可选</span>
+                    <span class="product-tag">直接进口</span>
+                    <span class="product-tag">批发零售</span>
+                    <span class="product-tag">优质产品</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Contact Form -->
+<section class="container my-5">
+    <div class="contact-form">
+        <h2 class="text-center mb-4">联系我们</h2>
+        <div class="alert alert-info" style="display: none">
+            <button class="close" data-dismiss="alert" type="button">&times;</button>
+            <strong>消息发送成功！</strong> 我们将尽快与您联系。
+        </div>
+        <form action="/class/contact.php" id="contactForm" method="POST">
             <div class="row">
-                <div class="alert alert-info" style="display: none">
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
-                    <strong>发送消息!</strong> 我们会尽快给您回复很快。
-                </div>
-                <form name="contactForm" id="contactForm" class="form-horizontal well" action="../../class/contact.php" method="POST">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label class="control-label col-sm-4" for="nom">全名</label>
-                            <div class=" col-sm-8">
-                                <input name="nom" class="col-sm-10" id="nom" type="text" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-4" for="compagny">公司</label>
-                            <div class=" col-sm-8">
-                                <input name="compagny" class="col-sm-10" id="compagny" type="text" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-4" for="email">电子邮件地址</label>
-                            <div class=" col-sm-8">
-                                <div class="input-append">
-                                    <input name="email" class="col-sm-10" id="email" type="email" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-4" for="tel">电话</label>
-                            <div class=" col-sm-8">
-                                <input name="tel" class="col-sm-10" id="tel" type="text" required>
-                            </div>
-                        </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <input class="form-control" id="nom" name="nom" placeholder="姓名" required type="text">
                     </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="message">信息</label>
-                            <div class=" col-sm-10">
-                                <div class="input-append">
-                                    <textarea rows="7" class="col-sm-12" id="message" name="message"></textarea>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mb-3">
+                        <input class="form-control" id="email" name="email" placeholder="电子邮箱" required
+                               type="email">
                     </div>
-                    <div class="pull-right"><input name="contactForm" class="btn btn-lg btn-primary" type="submit" value="发送"></div>
-                    <div class="clearfix"></div>
-                </form>
-            </div>
-
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2>服务</h2>
-                    <p>我们把我们的经验和关系，你的服务来查找或为您提供最符合您需求的项目</p>
+                    <div class="mb-3">
+                        <input class="form-control" id="tel" name="tel" placeholder="电话" type="tel">
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" id="compagny" name="compagny" placeholder="公司" type="text">
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h2>我们的产品</h2>
-                    <!--<p class="text-danger">Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>-->
-                    <p>我们进口各类纺织产品，根据用户的要求：  </p>
-                    <span class="label label-dti">棉</span>
-                    <span class="label label-dti">聚酯纤维</span>
-                    <span class="label label-dti">亚麻布</span>
-                    <span class="label label-dti">Mlifa</span>
-                    <span class="label label-dti">人造丝织物</span>
-                    <span class="label label-dti">人造麂皮</span>
-                    <span class="label label-dti">涤纶</span>
-                    <span class="label label-dti">PU 人造皮革</span>
-                    <span class="label label-dti">沙发</span>
-                    <span class="label label-dti">纱</span>
-                    <span class="label label-dti">衬衫面料</span>
-                    <span class="label label-dti">布料</span>
-                    <span class="label label-dti">缎面衬里</span>
-                    <span class="label label-dti">府绸莱卡</span>
-                    <span class="label label-dti">府绸80/20</span>
-                    <span class="label label-dti">涤粘</span>
-                    <span class="label label-dti">工作80/20185克各种颜色的组织</span>
-                </div>
-                <div class="col-lg-4">
-                    <h2>联系方式</h2>
-                    <address>76-78, rue Mohamed Smiha<br>
-                        Quartier: Derb Omar<br>
-                        20090 CASABLANCA </address>
-                    <abbr title="电话">电话</abbr> (+212) 05 22 44 61 90 / 05 22 44 65 24<br>
-                    <abbr title="传真">传真</abbr> (+212) 05 22 44 54 86
-                    <address>
-                        <strong>电子邮件 :</strong>
-                        <a href="mailto:info@dti.ma">info@dti.ma</a>
-                    </address>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" name="message" placeholder="您的留言" required
+                                  rows="6"></textarea>
+                    </div>
                 </div>
             </div>
-
-            <!-- Site footer -->
-            <div class="footer">
-                <p class="pull-right">&copy; Diffusion Textile Internationale (D.t.i s.a.r.l) 2014</p>
+            <div class="text-center">
+                <button class="btn btn-primary" type="submit">发送</button>
             </div>
+        </form>
+    </div>
+</section>
 
-        </div> <!-- /container -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="../../js/bootstrap.min.js"></script>
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>地址</h4>
+                <p>76-78号, 穆罕默德·斯米哈街<br>
+                    德布·奥马尔区<br>
+                    卡萨布兰卡 20090</p>
+            </div>
+            <div class="col-md-4">
+                <h4>联系方式</h4>
+                <p>电话: (+212) 05 22 44 61 90<br>
+                    传真: (+212) 05 22 44 54 86<br>
+                    邮箱: dti@afriat.info</p>
+            </div>
+            <div class="col-md-4">
+                <h4>营业时间</h4>
+                <p>周一至周五: 9:00 - 18:00<br>
+                    周六: 9:00 - 13:00</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
-            ga('create', 'UA-46510662-1', 'dti.ma');
-            ga('send', 'pageview');
-            $(document).ready(function() {
-                // lorsque je soumets le formulaire
-                $('#contactForm').on('submit', function() {
- 
-                    // je récupère les valeurs
-                    var email = $('#email').val();
-                    var message = $('#message').val();
- 
-                    // je vérifie une première fois pour ne pas lancer la requête HTTP
-                    // si je sais que mon PHP renverra une erreur
-                    if(email == '' || message == '') {
-                        alert('领域都充满生命');
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/d8e635d1ce.js"></script>
+
+<!-- Ajoutez ce script JavaScript à la fin de votre page, juste avant </body> -->
+<script>
+    $(document).ready(function () {
+        $('#contactForm').on('submit', function (e) {
+            e.preventDefault(); // Empêche la soumission normale du formulaire
+
+            var form = $(this);
+            var email = $('#email').val();
+            var message = $('#message').val();
+
+            if (email == '' || message == '') {
+                alert('Les champs doivent êtres remplis');
+                return false;
+            }
+
+            $.ajax({
+                url: form.attr('action'),
+                type: form.attr('method'),
+                data: form.serialize(),
+                dataType: 'json',
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                },
+                beforeSend: function () {
+                    // Désactiver le bouton d'envoi pendant la requête
+                    form.find('button[type="submit"]').prop('disabled', true);
+                },
+                success: function (response) {
+                    if (response.success) {
+                        $('.alert-info').fadeIn();
+                        form[0].reset();
+                        // Scroll vers le message de succès
+                        $('html, body').animate({
+                            scrollTop: $('.alert-info').offset().top - 100
+                        }, 500);
+                        // Cacher le message après 5 secondes
+                        setTimeout(function () {
+                            $('.alert-info').fadeOut();
+                        }, 5000);
                     } else {
-                        // appel Ajax
-                        $.ajax({
-                            url: $(this).attr('action'), // le nom du fichier indiqué dans le formulaire
-                            type: $(this).attr('method'), // la méthode indiquée dans le formulaire (get ou post)
-                            data: $(this).serialize(), // je sérialise les données (voir plus loin), ici les $_POST
-                            success: function() { // je récupère la réponse du fichier PHP
-                                $(".alert-info").show(); // j'affiche cette réponse
-                            }
-                        });
+                        alert('Erreur : ' + (response.message || 'Une erreur est survenue'));
                     }
-                    return false; // j'empêche le navigateur de soumettre lui-même le formulaire
-                });
+                },
+                error: function (xhr, status, error) {
+                    alert('Une erreur est survenue. Veuillez réessayer plus tard.');
+                    console.error('Erreur AJAX:', status, error);
+                },
+                complete: function () {
+                    // Réactiver le bouton d'envoi
+                    form.find('button[type="submit"]').prop('disabled', false);
+                }
             });
 
-        </script>
-    </body>
+            return false; // Empêche la soumission du formulaire
+        });
+
+        // Gestion du bouton de fermeture de l'alerte
+        $('.alert .close').on('click', function () {
+            $(this).parent('.alert').fadeOut();
+        });
+    });
+</script>
+</body>
 </html>

@@ -23,13 +23,13 @@ if ($_POST) {
     $message->setPriority(2);
     $failures = array();
     if (!$mailer->send($message, $failures)) {
-        echo "Failures:";
-        var_dump($failures);
+        header('Content-Type: application/json');
+        echo json_encode(['success' => false, 'message' => 'Échec de l\'envoi']);
     } else {
-        //header("Location: ../");
-        $success = true;
-        return $success;
+        header('Content-Type: application/json');
+        echo json_encode(['success' => true, 'message' => 'Message envoyé avec succès']);
     }
+    exit();
 }
 
 function validate($params) {
